@@ -1,0 +1,122 @@
+////
+/// Header
+////
+
+.site-header {
+  padding: 0.5rem 0 $base-line;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  @media #{$medium-up} {
+    background-image: url('/assets/images/background-newborn.jpg');
+  }
+  .wrapper {
+    max-width: 65em;
+    @media #{$medium-up} {
+      display: flex;
+      margin-bottom: $base-line*2;
+      align-content: center;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .site-title {
+    display: block;
+    margin: $base-line/2 auto;
+    font-size: $base-em * $ms5;
+    @media #{$medium-up} {
+      font-size: $base-em * $ms6;
+    }
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    &:hover {
+      opacity: 0.88;
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-logo {
+  background-color: #fff;
+}
+
+.site-header {
+  nav {
+    a {
+      &:hover,&:focus,&:active {
+        text-decoration: none;
+        border-bottom: 2px solid #444;
+      }
+    }
+  }
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: $small;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+  li {
+    text-align: right;
+    @media #{$medium-up} {
+      text-align: center;
+    }
+  }
+  ul li:after {
+    content: ' \00b7';
+    margin: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: $normal;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $vertceladon;
+  }
+  a {
+    display: block;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    color: #000;
+    @media #{$medium-up} {
+      color: #fff;
+    }
+  }
+  a:hover {
+    color: $sunsetorange;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.exergue {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  small {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  background: #000;
+}
